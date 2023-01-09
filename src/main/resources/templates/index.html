@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+index
+
+<p class="hello">안녕</p>
+<p class="hello">반가워</p>
+<p class="hello">헬로우</p>
+<button class="test-btn">버튼</button>
+
+
+<script>
+    $('.hello').text('바보천치');
+    $('.hello').css('color', 'red');
+    $('.test-btn').on('click', function () {
+        let name = '클릭했음';
+
+        $('.hello').text(name);
+        $('.hello').fadeOut();
+    });
+
+</script>
+
+</body>
+</html>
